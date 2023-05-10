@@ -6,21 +6,21 @@
 function calculateSalary(role) {
   switch (true) {
     case role === 'ceo':
-      console.log("Your Salary is 2200")
-      break;
+      return "2200";
 
-      case role === 'manager' || 'cto':
-        console.log("Your salary is 1800")
-        break;
+      case role === 'manager':
+        return "1800";
+
+      case role === 'cto':
+        return "1800"
 
       case role === 'developer':
-        console.log("Your salary is 1500")  
-        break;
+        return "1500";
 
       default:
-        console.log("Your salary is 1000")  
-        break;
+       return "1000";
   }
+  
 }
 
 const ceoSalary = calculateSalary('ceo');
