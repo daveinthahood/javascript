@@ -1,11 +1,11 @@
 function nicknameMap(persons) {
-  const nicknames = [];
-    for (let index = 0; index < persons.lenght; index ++){
-      const {name, age} = persons[index];
-      nameAge =  `${name} - ${age}`;
-      nicknames.push(nameAge)
-    }
-    return nicknames;
+  let nicknames = [];
+  /* ho creato l'arrey nuovo e ci stampo le key del vecchio array dentro con il push*/
+
+  for (let key of persons) {
+    nicknames.push(`${key.name} ${key.age}`);
+  }
+  return nicknames;
 }
 
 const persons = [
