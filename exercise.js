@@ -12,7 +12,15 @@ let promise = new Promise ((resolve, reject) => {
     }
 });
 
-promise 
-.then((number) => console.log("il numero è maggiore di 10")) //**? in questo caso stamperà qui perché il numero è maggiore di 10 
-.catch((error) => console.error("il numero è minore di 10 ")) //**! ho utilizzato il console.error cosi da mettere in risalto l'errore se il numero fosse stato minore di 10  */
+//**! il then gestisce il risultato del codice di sopra, potevamo scriverlo anche in un altro modo  */
+promise.then(
+    number => console.log("il numero è maggiore di 10"), //**? in questo caso stamperà qui perché il numero è maggiore di 10 
+    error => console.error("il numero è minore di 10 "), //**! ho utilizzato il console.error cosi da mettere in risalto l'errore se il numero fosse stato minore di 10  */
+    );
+
+
+
+// promise
+// .then((number) => console.log("il numero è maggiore di 10")) //**? in questo caso stamperà qui perché il numero è maggiore di 10 
+// .catch((error) => console.error("il numero è minore di 10 ")) //**! ho utilizzato il console.error cosi da mettere in risalto l'errore se il numero fosse stato minore di 10  */
 
