@@ -1,13 +1,6 @@
 const isLogged = true;
 
 
-// function chaining  (isLogged) {
-//     return new Promise((resolve, reject)) => {
-//         if (isLogged == true){ 
-//             resolve(Math.random()) 
-//     }}
-// }
-
 
 //**! creiamo la prima funzione che ci ritornerà una nuova promise dove se is logged è true genererà un numero random altrimente si bloccherà e dirà false */
 function chaining(isLogged) {
